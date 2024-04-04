@@ -1,0 +1,14 @@
+{
+    "name": "Holypastry.Bakery.Runtime",
+    "rootNamespace": "Holypastry.Bakery",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

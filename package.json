@@ -1,0 +1,15 @@
+{
+    "name": "com.holypastry.bakery",
+    "version": "0.0.1",
+    "description": "A bunch of base classes and utilities for building a game in Unity3D",
+    "unity": "2022.3",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": {
+        "name": "Sebastien Berton",
+        "email": "sebasti1.berton@gmail.com",
+        "url": "https://github.com/Holypastry"
+    },
+    "license": "MIT"
+}
