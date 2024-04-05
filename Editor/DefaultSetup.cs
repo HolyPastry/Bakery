@@ -12,22 +12,40 @@ namespace Holypastry.Bakery.Editor
             AssetDatabase.Refresh();
         }
 
-        [MenuItem("Holypastry/Tools/Import My Favorite Assets")]
+        [MenuItem("Holypastry/Tools/Import Base Unity Packages")]
         public static void ImportMyFavoriteAssets()
         {
-            Assets.Import("Grid Prototype Materials", "MLAgent/Textures Materials");
-            Assets.Import("DOTween HOTween v2", "Demigiant/Editor ExtensionsAnimation");
             Packages.Install(new[]
             {
                 "com.unity.cinemachine",
                 "com.unity.inputsystem",
                 "com.unity.textmeshpro",
+            });
+        }
+
+        [MenuItem("Holypastry/Tools/Install GitPackages")]
+        public static void InstallGitPackages()
+        {
+            Packages.Install(new[]
+          {
                 "https://github.com/KyleBanks/scene-ref-attribute.git",
                 "https://github.com/starikcetin/Eflatun.SceneReference.git#upm"
 
             });
-
         }
+
+        [MenuItem("Holypastry/Tools/Install Dotween")]
+        public static void InstallDotween()
+        {
+            Assets.Import("DOTween HOTween v2", "Demigiant/Editor ExtensionsAnimation");
+        }
+
+        [MenuItem("Holypastry/Tools/Install Prototype Materials")]
+        public static void InstallPrototypeMaterials()
+        {
+            Assets.Import("Grid Prototype Materials", "MLAgent/Textures Materials");
+        }
+
 
         [MenuItem("Holypastry/Tools/Install Splines")]
         public static void InstallMLAgents()
