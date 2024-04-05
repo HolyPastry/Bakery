@@ -22,7 +22,9 @@ namespace Holypastry.Bakery.Editor
                 "com.unity.cinemachine",
                 "com.unity.inputsystem",
                 "com.unity.textmeshpro",
-                "git+https://github.com/KyleBanks/scene-ref-attribute"
+                "https://github.com/KyleBanks/scene-ref-attribute.git",
+                "https://github.com/starikcetin/Eflatun.SceneReference.git#upm"
+
             });
 
         }
