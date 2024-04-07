@@ -18,6 +18,12 @@ namespace Holypastry.Bakery.Editor
             string subfolder = Path.Combine(subfolders);
             Import(assetName, subfolder, "~/Library/Unity/Asset Store-5.x");
         }
+
+        public static void ImportFromLocal(string assetName, params string[] subfolders)
+        {
+            string subfolder = Path.Combine(subfolders);
+            Import(assetName, subfolder, "/Users/sebastienberton/Projects/Unity/LocalStore");
+        }
     }
 
 }

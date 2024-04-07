@@ -21,6 +21,24 @@ namespace Holypastry.Bakery.Editor
             });
         }
 
+        [MenuItem("Holypastry/Install/MAST")]
+        public static void InstallMast()
+        {
+            Assets.ImportFromLocal("MAST 1.5.1");
+        }
+
+        [MenuItem("Holypastry/Install Starter Kits/3D Platformer")]
+        public static void Install3DPlatformer()
+        {
+            Assets.ImportFromLocal("3DPlatformer");
+        }
+
+        [MenuItem("Holypastry/Install Starter Kits/ShooterOnRails")]
+        public static void InstallShooterOnRails()
+        {
+            Assets.ImportFromLocal("ShooterOnRails");
+        }
+
 
         [MenuItem("Holypastry/Install/Dotween")]
         public static void InstallDotween()
