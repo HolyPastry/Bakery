@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Holypastry
+namespace Holypastry.Bakery
 {
 
     public interface ISpawnableFactory<T> where T : Spawnable
