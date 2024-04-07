@@ -4,12 +4,13 @@ namespace Holypastry.Bakery
 {
     public abstract class SpawnManager : MonoBehaviour
     {
+        // [SerializeField] protected ISpawnStrategy _spawnStrategy;
         public abstract void Spawn();
     }
 
     // //  [SerializeField] protected Transform[] spawnPoints;
 
-    // [SerializeField] protected ISpawnStrategy _spawnStrategy;
+
 
 
     // public virtual void Awake()
