@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Holypastry.Bakery 
+namespace Holypastry.Bakery
 {
     public class Spawner<T> where T : Spawnable
     {
@@ -13,10 +13,10 @@ namespace Holypastry.Bakery
             _entityFactory = entityFactory;
         }
 
-        public void Spawn()
+        public virtual T Spawn()
         {
             Transform spawnPoint = _spawnStrategy.NextSpawnPoint();
-            T entity = _entityFactory.Create(spawnPoint);
+            return _entityFactory.Create(spawnPoint);
         }
     }
 }
