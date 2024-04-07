@@ -24,6 +24,4 @@ namespace Holypastry.Bakery
         }
 
     }
-
-    public class EventListener : EventListener<Empty> { }
 }
