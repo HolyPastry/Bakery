@@ -21,11 +21,18 @@ namespace Holypastry.Bakery.Editor
             });
         }
 
-        [MenuItem("Holypastry/Install/MAST")]
+        [MenuItem("Holypastry/Install/Features/MAST")]
         public static void InstallMast()
         {
             Assets.ImportFromLocal("MAST 1.5.1");
         }
+
+        [MenuItem("Holypastry/Install/Features/Easy Save")]
+        public static void InstallEasySave()
+        {
+            Assets.ImportFromStore("Easy Save - The Complete Save Data Serializer System", "Moodkie", "Editor ExtensionsUtilities");
+        }
+
 
         [MenuItem("Holypastry/Install Starter Kits/3D Platformer")]
         public static void Install3DPlatformer()
@@ -40,52 +47,52 @@ namespace Holypastry.Bakery.Editor
         }
 
 
-        [MenuItem("Holypastry/Install/Dotween")]
+        [MenuItem("Holypastry/Install/Features/Dotween")]
         public static void InstallDotween()
         {
             Assets.ImportFromStore("DOTween HOTween v2", "Demigiant", "Editor ExtensionsAnimation");
         }
 
-        [MenuItem("Holypastry/Install/Crosshairs")]
+        [MenuItem("Holypastry/Install/Assets/Crosshairs")]
         public static void InstallCrosshairs()
         {
             Assets.ImportFromStore("Too Many Crosshairs", "Clean Shirt Labs", "Textures MaterialsIcons UI");
         }
 
-        [MenuItem("Holypastry/Install/AudioEffects")]
+        [MenuItem("Holypastry/Install/Assets/AudioEffects")]
         public static void InstallAudioEffects()
         {
             Assets.ImportFromStore("FREE Casual Game SFX Pack", "Dustyroom", "AudioSound FX");
         }
 
-        [MenuItem("Holypastry/Install/Shapes")]
+        [MenuItem("Holypastry/Install/Assets/Shapes")]
         public static void InstallShapes()
         {
             Assets.ImportFromStore("Shapes", "Freya Holmr", "Editor ExtensionsEffects");
         }
 
 
-        [MenuItem("Holypastry/Install/Prototype Materials")]
+        [MenuItem("Holypastry/Install/Assets/Prototype Materials")]
         public static void InstallPrototypeMaterials()
         {
             Assets.ImportFromStore("Grid Prototype Materials", "MLAgent", "Textures Materials");
         }
 
 
-        [MenuItem("Holypastry/Install/Splines")]
+        [MenuItem("Holypastry/Install/Features/Splines")]
         public static void InstallMLAgents()
         {
             Packages.Install(new[] { "com.unity.splines" });
         }
 
-        [MenuItem("Holypastry/Install/AI Navigation")]
+        [MenuItem("Holypastry/Install/Features/AI Navigation")]
         public static void InstallAINavigation()
         {
             Packages.Install(new[] { "com.unity.ai.navigation" });
         }
 
         //install netcode for gameobjects
-        [MenuItem("Holypastry/Install/Netcode for GameObjects")]
+        [MenuItem("Holypastry/Install/Features/Netcode for GameObjects")]
         public static void InstallNetcodeForGameObjects()
         {
             Packages.Install(new[] {
