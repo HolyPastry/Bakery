@@ -1,12 +1,14 @@
 using System;
 
-namespace Holypastry.Bakery 
+namespace Holypastry.Bakery
 {
     public abstract class Timer
     {
         protected float initialTime;
         protected float currentTime;
         public bool IsRunning { get; protected set; }
+
+        public float CurrentTime => currentTime;
 
         public float Progress => currentTime / initialTime;
 
