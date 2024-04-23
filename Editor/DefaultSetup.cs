@@ -33,6 +33,11 @@ namespace Holypastry.Bakery.Editor
             Assets.ImportFromStore("Easy Save - The Complete Save Data Serializer System", "Moodkie", "Editor ExtensionsUtilities");
         }
 
+        [MenuItem("Holypastry/Install/Algo/CollideAndSlide")]
+        public static void CollideAndSlide()
+        {
+            Assets.ImportFromLocal("CollideAndSlide");
+        }
 
         [MenuItem("Holypastry/Install Starter Kits/3D Platformer")]
         public static void Install3DPlatformer()
