@@ -4,6 +4,9 @@ using UnityEngine.Events;
 
 namespace Holypastry.Bakery
 {
+    public class EventListener : EventListener<Empty>
+    { }
+
     public abstract class EventListener<T> : MonoBehaviour
     {
         [SerializeField] EventChannel<T> _channel;

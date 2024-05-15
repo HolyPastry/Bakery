@@ -51,6 +51,12 @@ namespace Holypastry.Bakery.Editor
             Assets.ImportFromLocal("ShooterOnRails");
         }
 
+        [MenuItem("Holypastry/Install Starter Kits/OutlineMaterial")]
+        public static void InstalOutlineMaterial()
+        {
+            Assets.ImportFromLocal("OutlineMaterial");
+        }
+
 
         [MenuItem("Holypastry/Install/Features/Dotween")]
         public static void InstallDotween()

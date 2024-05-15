@@ -8,7 +8,7 @@ namespace Holypastry.Bakery
 {
     public abstract class EventChannel<T> : ScriptableObject
     {
-        readonly HashSet<EventListener<T>> _listeners = new();
+        protected readonly HashSet<EventListener<T>> _listeners = new();
 
         public void Invoke(T arg)
         {
@@ -24,8 +24,11 @@ namespace Holypastry.Bakery
 
     }
 
-    [CreateAssetMenu(menuName = "EventChannel/EventChannel")]
-    public class EventChannel : EventChannel<Empty> { }
+    [CreateAssetMenu(menuName = "EventChannel/EmptyEventChannel")]
+    public class EventChannel : EventChannel<Empty>
+    {
+
+    }
 
     public struct Empty
     {
