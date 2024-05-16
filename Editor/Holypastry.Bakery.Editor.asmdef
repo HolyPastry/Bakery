@@ -2,7 +2,9 @@
     "name": "Holypastry.Bakery.Editor",
     "rootNamespace": "Holypastry.Bakery.Editor",
     "references": [],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
