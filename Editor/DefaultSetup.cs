@@ -39,6 +39,12 @@ namespace Holypastry.Bakery.Editor
             Assets.ImportFromLocal("CollideAndSlide");
         }
 
+        [MenuItem("Holypastry/Install/Feature/State Machine")]
+        public static void StateMachine()
+        {
+            Assets.ImportFromLocal("StateMachine");
+        }
+
         [MenuItem("Holypastry/Install Starter Kits/3D Platformer")]
         public static void Install3DPlatformer()
         {
