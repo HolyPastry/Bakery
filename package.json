@@ -11,5 +11,6 @@
         "email": "sebasti1.berton@gmail.com",
         "url": "https://github.com/Holypastry"
     },
+    "hideInEditor": false,
     "license": "MIT"
 }

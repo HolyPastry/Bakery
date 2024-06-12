@@ -1,3 +1,4 @@
+using System.IO;
 using UnityEditor;
 
 namespace Holypastry.Bakery.Editor
@@ -9,6 +10,7 @@ namespace Holypastry.Bakery.Editor
         public static void CreateDefaultFolder()
         {
             Folders.Create("_Project", "Animation", "Art", "Materials", "Prefabs", "Presets", "ScriptableObjects", "Scenes", "Scripts", "Settings");
+            Directory.Delete("Scenes");
             AssetDatabase.Refresh();
 
             Packages.Install(new[]
@@ -20,11 +22,30 @@ namespace Holypastry.Bakery.Editor
                 "com.unity.inputsystem",
             });
         }
+        [MenuItem("Holypastry/Remove Useless Stuff")]
+        public static void RemoveUselessStuff()
+        {
+
+            Packages.Uninstall(new[]
+            {
+                "com.unity.visualscripting"
+            });
+        }
+
 
         [MenuItem("Holypastry/Install/Features/MAST")]
         public static void InstallMast()
         {
             Assets.ImportFromLocal("MAST 1.5.1");
+        }
+
+        [MenuItem("Holypastry/Install/Features/Proto NPCs")]
+        public static void InstallNpcs()
+        {
+            Packages.Install(new[] {
+                "https://github.com/KyleBanks/scene-ref-attribute.git",
+                "https://github.com/starikcetin/Eflatun.SceneReference.git#upm",
+                "git@github.com:HolyPastry/Bakery-NPC.git#upm" });
         }
 
         [MenuItem("Holypastry/Install/Features/Easy Save")]
