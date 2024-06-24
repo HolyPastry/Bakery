@@ -10,8 +10,6 @@ namespace Holypastry.Bakery.Editor
         public static void CreateDefaultFolder()
         {
             Folders.Create("_Project", "Animation", "Art", "Materials", "Prefabs", "Presets", "ScriptableObjects", "Scenes", "Scripts", "Settings");
-            Directory.Delete("Scenes");
-            AssetDatabase.Refresh();
 
             Packages.Install(new[]
             {
@@ -22,15 +20,14 @@ namespace Holypastry.Bakery.Editor
                 "com.unity.inputsystem",
             });
         }
-        [MenuItem("Holypastry/Remove Useless Stuff")]
-        public static void RemoveUselessStuff()
-        {
 
-            Packages.Uninstall(new[]
-            {
-                "com.unity.visualscripting"
-            });
+
+        [MenuItem("Holypastry/Install/Features/InputManager")]
+        public static void InstallInputManager()
+        {
+            Assets.ImportFromLocal("InputManager");
         }
+
 
 
         [MenuItem("Holypastry/Install/Features/MAST")]
@@ -39,13 +36,10 @@ namespace Holypastry.Bakery.Editor
             Assets.ImportFromLocal("MAST 1.5.1");
         }
 
-        [MenuItem("Holypastry/Install/Features/Proto NPCs")]
+        [MenuItem("Holypastry/Install/Features/NPCs")]
         public static void InstallNpcs()
         {
-            Packages.Install(new[] {
-                "https://github.com/KyleBanks/scene-ref-attribute.git",
-                "https://github.com/starikcetin/Eflatun.SceneReference.git#upm",
-                "git@github.com:HolyPastry/Bakery-NPC.git#upm" });
+            Assets.ImportFromLocal("NPC");
         }
 
         [MenuItem("Holypastry/Install/Features/Easy Save")]
@@ -53,30 +47,6 @@ namespace Holypastry.Bakery.Editor
         {
             Assets.ImportFromStore("Easy Save - The Complete Save Data Serializer System", "Moodkie", "Editor ExtensionsUtilities");
         }
-
-        // [MenuItem("Holypastry/Install/Algo/CollideAndSlide")]
-        // public static void CollideAndSlide()
-        // {
-        //     Assets.ImportFromLocal("CollideAndSlide");
-        // }
-
-        // [MenuItem("Holypastry/Install/Feature/State Machine")]
-        // public static void StateMachine()
-        // {
-        //     Assets.ImportFromLocal("StateMachine");
-        // }
-
-        // [MenuItem("Holypastry/Install Starter Kits/3D Platformer")]
-        // public static void Install3DPlatformer()
-        // {
-        //     Assets.ImportFromLocal("3DPlatformer");
-        // }
-
-        // [MenuItem("Holypastry/Install Starter Kits/ShooterOnRails")]
-        // public static void InstallShooterOnRails()
-        // {
-        //     Assets.ImportFromLocal("ShooterOnRails");
-        // }
 
         [MenuItem("Holypastry/Install/Assets/OutlineMaterial")]
         public static void InstalOutlineMaterial()
