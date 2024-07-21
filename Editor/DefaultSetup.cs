@@ -17,17 +17,9 @@ namespace Holypastry.Bakery.Editor
                 "https://github.com/starikcetin/Eflatun.SceneReference.git#upm",
                 "com.unity.cinemachine",
                 "com.unity.textmeshpro",
-                "com.unity.inputsystem",
+                "https://github.com/HolyPastry/com.holypastry.bakery.inputs.git",
             });
         }
-
-
-        [MenuItem("Holypastry/Install/Features/InputManager")]
-        public static void InstallInputManager()
-        {
-            Assets.ImportFromLocal("InputManager");
-        }
-
 
 
         [MenuItem("Holypastry/Install/Features/MAST")]
