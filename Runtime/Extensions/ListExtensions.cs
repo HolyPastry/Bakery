@@ -53,6 +53,20 @@ namespace Holypastry.Bakery
             }
         }
 
+        public static bool TryAndGet<T>(this IList<T> list, Func<T, bool> predicate, out T item)
+        {
+            foreach (T t in list)
+            {
+                if (predicate(t))
+                {
+                    item = t;
+                    return true;
+                }
+            }
+            item = default;
+            return false;
+        }
+
         public static List<U> SelectSub<T, U>(this IList<T> list, Func<T, U> predicate)
         {
             List<U> listU = new();
