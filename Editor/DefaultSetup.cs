@@ -1,5 +1,6 @@
 using System.IO;
 using UnityEditor;
+using UnityEngine;
 
 namespace Holypastry.Bakery.Editor
 {
@@ -19,6 +20,13 @@ namespace Holypastry.Bakery.Editor
                 "com.unity.textmeshpro",
                 "https://github.com/HolyPastry/com.holypastry.bakery.inputs.git",
             });
+        }
+
+        [MenuItem("Holypastry/Open Persistent Data Path")]
+        public static void OpenDataPath()
+        {
+            EditorUtility.RevealInFinder(Application.persistentDataPath);
+
         }
 
 
