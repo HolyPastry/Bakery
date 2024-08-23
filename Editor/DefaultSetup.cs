@@ -41,6 +41,12 @@ namespace Holypastry.Bakery.Editor
             Assets.ImportFromLocal("NPC");
         }
 
+        [MenuItem("Holypastry/Install/Features/Inputs")]
+        public static void InstallInput()
+        {
+            Assets.ImportFromLocal("Inputs");
+        }
+
         [MenuItem("Holypastry/Install/Features/Easy Save")]
         public static void InstallEasySave()
         {
