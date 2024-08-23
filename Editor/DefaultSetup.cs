@@ -18,6 +18,7 @@ namespace Holypastry.Bakery.Editor
                 "https://github.com/starikcetin/Eflatun.SceneReference.git#upm",
                 "com.unity.cinemachine",
                 "com.unity.textmeshpro",
+                "com.unity.inputsystem"
             });
         }
 
