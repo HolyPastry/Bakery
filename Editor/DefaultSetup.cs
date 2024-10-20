@@ -1,4 +1,3 @@
-using System.IO;
 using UnityEditor;
 using UnityEngine;
 
@@ -26,14 +25,12 @@ namespace Holypastry.Bakery.Editor
         public static void OpenDataPath()
         {
             EditorUtility.RevealInFinder(Application.persistentDataPath);
-
         }
 
-
-        [MenuItem("Holypastry/Install/Features/MAST")]
-        public static void InstallMast()
+        [MenuItem("Holypastry/Install/Features/TTS")]
+        public static void InstallTTS()
         {
-            Assets.ImportFromLocal("MAST 1.5.1");
+            Assets.ImportFromLocal("TextToSpeech");
         }
 
         [MenuItem("Holypastry/Install/Features/NPCs")]
