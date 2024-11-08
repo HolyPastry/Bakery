@@ -27,6 +27,12 @@ namespace Holypastry.Bakery.Editor
             EditorUtility.RevealInFinder(Application.persistentDataPath);
         }
 
+        [MenuItem("Holypastry/Install/Features/GoogleSheets")]
+        public static void InstallGoogleSheets()
+        {
+            Assets.ImportFromLocal("GoogleSheet");
+        }
+
         [MenuItem("Holypastry/Install/Features/TTS")]
         public static void InstallTTS()
         {
