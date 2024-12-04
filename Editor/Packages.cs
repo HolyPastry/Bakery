@@ -46,7 +46,9 @@ namespace Holypastry.Bakery.Editor
                 Debug.Log("Installed " + _addRequest.Result.packageId);
 
             if (_addRequest.Status >= StatusCode.Failure)
-                Debug.Log("Failed to install " + _addRequest.Result.packageId);
+            {
+                Debug.Log("Failed to install Package" + _addRequest.Error.message);
+            }
 
 
             if (_packages.Count > 0)
