@@ -9,8 +9,8 @@ namespace Holypastry.Bakery.Editor
         [MenuItem("Holypastry/Default Setup")]
         public static void CreateDefaultFolder()
         {
-            Folders.Create("_Project", "Animation", "Art", "Materials", "Prefabs", "Presets", "ScriptableObjects", "Scenes", "Scripts", "Settings");
-
+            Folders.Create("_Content", "Animation", "3DArt", "2DArt", "Audio", "Prefabs", "ScriptableObjects", "Scenes", "Scripts", "Settings");
+            Folders.Create("Features");
             Packages.Install(new[]
             {
                 "https://github.com/KyleBanks/scene-ref-attribute.git",
@@ -68,6 +68,12 @@ namespace Holypastry.Bakery.Editor
         public static void InstallDotween()
         {
             Assets.ImportFromStore("DOTween HOTween v2", "Demigiant", "Editor ExtensionsAnimation");
+        }
+
+        [MenuItem("Holypastry/Install/Features/Ink")]
+        public static void InstallInk()
+        {
+            Packages.Install(new[] { "com.inkle.ink-unity-integration" });
         }
 
         [MenuItem("Holypastry/Install/Assets/Crosshairs")]
