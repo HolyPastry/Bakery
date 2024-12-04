@@ -73,7 +73,7 @@ namespace Holypastry.Bakery.Editor
         [MenuItem("Holypastry/Install/Features/Ink")]
         public static void InstallInk()
         {
-            Packages.Install(new[] { "com.inkle.ink-unity-integration" });
+            Packages.Install(new[] { "https://github.com/inkle/ink-unity-integration.git#upm" });
         }
 
         [MenuItem("Holypastry/Install/Assets/Crosshairs")]
