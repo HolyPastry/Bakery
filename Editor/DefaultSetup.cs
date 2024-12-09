@@ -9,8 +9,8 @@ namespace Holypastry.Bakery.Editor
         [MenuItem("Holypastry/Default Setup")]
         public static void CreateDefaultFolder()
         {
-            Folders.Create("_Content", "Animation", "3DArt", "2DArt", "Audio", "Prefabs", "ScriptableObjects", "Scenes", "Scripts", "Settings");
-            Folders.Create("Features");
+            Folders.Create("_Content", "Animation", "3DArt", "2DArt", "Music", "Audio", "Prefabs", "ScriptableObjects", "Scenes", "Scripts", "Settings");
+            Folders.Create("_Features");
             Packages.Install(new[]
             {
                 "https://github.com/KyleBanks/scene-ref-attribute.git",
@@ -20,6 +20,8 @@ namespace Holypastry.Bakery.Editor
                 "com.unity.inputsystem"
             });
         }
+
+
 
         [MenuItem("Holypastry/Open Persistent Data Path")]
         public static void OpenDataPath()
@@ -49,6 +51,13 @@ namespace Holypastry.Bakery.Editor
         public static void InstallInput()
         {
             Assets.ImportFromLocal("Inputs");
+        }
+
+        [MenuItem("Holypastry/Install/Features/BetterHierarchy")]
+
+        public static void InstallBetterHierarchy()
+        {
+            Assets.ImportFromStore("Better Hierarchy", "Toaster Head", "Editor ExtensionsUtilities");
         }
 
         [MenuItem("Holypastry/Install/Features/Easy Save")]
