@@ -10,10 +10,13 @@ namespace Holypastry.Bakery.Editor
     {
         public static void Create(string root, params string[] folders)
         {
-            string fullpath = Path.Combine(Application.dataPath, root);
+            string rootPath = Path.Combine(Application.dataPath, root);
+            if (!Directory.Exists(rootPath))
+                Directory.CreateDirectory(rootPath);
+
             foreach (string folder in folders)
             {
-                string path = Path.Combine(fullpath, folder);
+                string path = Path.Combine(rootPath, folder);
                 if (!Directory.Exists(path))
                 {
                     Directory.CreateDirectory(path);

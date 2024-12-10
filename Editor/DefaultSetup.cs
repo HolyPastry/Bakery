@@ -29,7 +29,19 @@ namespace Holypastry.Bakery.Editor
             EditorUtility.RevealInFinder(Application.persistentDataPath);
         }
 
-        [MenuItem("Holypastry/Install/Features/GoogleSheets")]
+        [MenuItem("Holypastry/Install/Features/Cheat Manager")]
+        public static void InstallCheatManager()
+        {
+            Assets.ImportFromLocal("Cheat");
+        }
+
+        [MenuItem("Holypastry/Install/Features/Flow Manager")]
+        public static void InstallFlowManager()
+        {
+            Assets.ImportFromLocal("Flow");
+        }
+
+        [MenuItem("Holypastry/Install/Features/Google Sheets")]
         public static void InstallGoogleSheets()
         {
             Assets.ImportFromLocal("GoogleSheet");
