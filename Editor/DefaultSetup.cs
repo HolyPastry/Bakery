@@ -5,7 +5,7 @@ namespace Holypastry.Bakery.Editor
     public static class DefaultSetup
     {
 
-        [MenuItem("Holypastry/Default Setup")]
+        [MenuItem("Bakery/Default Setup")]
         public static void CreateDefaultFolder()
         {
             Folders.Create("_Content", "Animation", "Resources", "3DArt", "2DArt", "Music", "Audio", "Prefabs", "ScriptableObjects", "Scenes", "Scripts", "Settings");
