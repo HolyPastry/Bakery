@@ -12,25 +12,25 @@ namespace Holypastry.Bakery.Editor
             EditorUtility.RevealInFinder(Application.persistentDataPath);
         }
 
-        [MenuItem("Bakery/Install/Features/Cheat Manager")]
+        [MenuItem("Bakery/Install/Services/Cheat")]
         public static void InstallCheatManager()
         {
             Assets.ImportFromLocal("Cheat");
         }
 
-        [MenuItem("Bakery/Install/Features/Flow Manager")]
+        [MenuItem("Bakery/Install/Services/Flow")]
         public static void InstallFlowManager()
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/FlowServices.git" });
         }
 
-        [MenuItem("Bakery/Install/Features/Google Sheets")]
+        [MenuItem("Bakery/Install/Services/Google Sheets")]
         public static void InstallGoogleSheets()
         {
             Assets.ImportFromLocal("GoogleSheet");
         }
 
-        [MenuItem("Bakery/Install/Features/TTS")]
+        [MenuItem("Bakery/Install/Services/TTS")]
         public static void InstallTTS()
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/TextToSpeech.git" });
