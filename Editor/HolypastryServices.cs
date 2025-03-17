@@ -11,6 +11,12 @@ namespace Holypastry.Bakery.Editor
             Packages.Install(new[] { "https://github.com/HolyPastry/FlowServices.git" });
         }
 
+        [MenuItem("Bakery/Install/Services/Input")]
+        public static void InstallInputManager()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/InputServices.git" });
+        }
+
         [MenuItem("Bakery/Install/Services/Cheat")]
         public static void InstallCheatManager()
         {
@@ -33,12 +39,6 @@ namespace Holypastry.Bakery.Editor
         public static void InstallNpcs()
         {
             Assets.ImportFromLocal("NPC");
-        }
-
-        [MenuItem("Bakery/Install/Services/Inputs")]
-        public static void InstallInput()
-        {
-            Assets.ImportFromLocal("Inputs");
         }
 
     }
