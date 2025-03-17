@@ -17,6 +17,13 @@ namespace Holypastry.Bakery.Editor
             Packages.Install(new[] { "https://github.com/HolyPastry/InputServices.git" });
         }
 
+        [MenuItem("Bakery/Install/Services/Saves")]
+        public static void InstallSaveManager()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/SaveServices.git" });
+        }
+
+
         [MenuItem("Bakery/Install/Services/Cheat")]
         public static void InstallCheatManager()
         {
