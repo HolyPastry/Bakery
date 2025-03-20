@@ -5,7 +5,7 @@ namespace Holypastry.Bakery.Editor
     public static class DefaultSetup
     {
 
-        [MenuItem("Bakery/Default Setup")]
+        [MenuItem("Bakery/Default Project Setup")]
         public static void CreateDefaultFolder()
         {
             Folders.Create("_Content", "Animation", "Resources", "3DArt", "2DArt", "Music", "Audio", "Prefabs", "ScriptableObjects", "Scenes", "Scripts", "Settings");
@@ -19,5 +19,14 @@ namespace Holypastry.Bakery.Editor
                 "com.unity.inputsystem"
             });
         }
+
+        [MenuItem("Bakery/Default Package Setup")]
+        public static void CreateDefaultPackage()
+        {
+            Folders.Create("PackageName", "Editor", "Runtime");
+            Folders.Create("Samples");
+        }
+
+
     }
 }

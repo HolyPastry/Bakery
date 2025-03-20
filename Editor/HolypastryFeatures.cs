@@ -4,8 +4,18 @@ namespace Holypastry.Bakery.Editor
 {
     public static class HolypastryFeatures
     {
-        [MenuItem("Bakery/Install/Features/BetterHierarchy")]
 
+        [MenuItem("Bakery/Install/Features/AutoReference")]
+        public static void InstallAutoReference()
+        {
+            Packages.Install(new[]
+            {
+                "https://github.com/KyleBanks/scene-ref-attribute.git",
+            });
+        }
+
+
+        [MenuItem("Bakery/Install/Features/BetterHierarchy")]
         public static void InstallBetterHierarchy()
         {
             Assets.ImportFromStore("Better Hierarchy", "Toaster Head", "Editor ExtensionsUtilities");

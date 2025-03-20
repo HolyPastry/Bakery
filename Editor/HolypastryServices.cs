@@ -5,6 +5,15 @@ namespace Holypastry.Bakery.Editor
     public static class HolypastryServices
     {
 
+        [MenuItem("Bakery/Install/Services/Time")]
+        public static void InstallTimeManager()
+        {
+            InstallFlowManager();
+            InstallTimeManager();
+            Packages.Install(new[] { "https://github.com/HolyPastry/TimeServices.git" });
+        }
+
+
         [MenuItem("Bakery/Install/Services/Flow")]
         public static void InstallFlowManager()
         {
