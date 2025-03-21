@@ -1,6 +1,7 @@
 {
     "name": "com.holypastry.bakery",
     "version": "0.0.6",
+    "displayName": "Bakery",
     "description": "A bunch of base classes and utilities for building a game in Unity3D",
     "unity": "2022.3",
     "scripts": {

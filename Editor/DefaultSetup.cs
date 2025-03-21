@@ -25,10 +25,16 @@ namespace Holypastry.Bakery.Editor
         {
             Folders.Create("PackageName", "Editor", "Runtime");
             Folders.Create("Samples");
+            Packages.Install(new[]
+         {
+                "https://github.com/KyleBanks/scene-ref-attribute.git",
+                "https://github.com/starikcetin/Eflatun.SceneReference.git#upm",
+            });
+
         }
 
-        
-        
+
+
 
     }
 }
