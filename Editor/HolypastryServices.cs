@@ -4,7 +4,11 @@ namespace Holypastry.Bakery.Editor
 {
     public static class HolypastryServices
     {
-
+        [MenuItem("Bakery/Install/Services/Camera")]
+        public static void InstallCameraManager()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/CameraServices.git" });
+        }
         [MenuItem("Bakery/Install/Services/Time")]
         public static void InstallTimeManager()
         {
