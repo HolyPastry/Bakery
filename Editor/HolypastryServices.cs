@@ -8,7 +8,7 @@ namespace Holypastry.Bakery.Editor
         [MenuItem("Bakery/Install/Services/Dialogs")]
         public static void InstallDialogManager()
         {
-            HolypastryFeatures.InstallInk();
+            // HolypastryFeatures.InstallInk();
             Packages.Install(new[] { "https://github.com/HolyPastry/DialogServices.git" });
 
         }
