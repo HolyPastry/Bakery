@@ -4,6 +4,14 @@ namespace Holypastry.Bakery.Editor
 {
     public static class HolypastryServices
     {
+
+        [MenuItem("Bakery/Install/Services/Dialogs")]
+        public static void InstallDialogManager()
+        {
+            HolypastryFeatures.InstallInk();
+            Packages.Install(new[] { "https://github.com/HolyPastry/DialogServices.git" });
+
+        }
         [MenuItem("Bakery/Install/Services/Camera")]
         public static void InstallCameraManager()
         {
