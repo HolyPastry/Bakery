@@ -4,7 +4,7 @@ namespace Holypastry.Bakery.Editor
 {
     public static class HolypastryServices
     {
-        [MenuItem("Bakey/Install/Services/Cutscenes")]
+        [MenuItem("Bakery/Install/Services/Cutscenes")]
         public static void InstallCutsceneManager()
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/CutsceneServices.git" });
