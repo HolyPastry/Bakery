@@ -5,6 +5,12 @@ namespace Holypastry.Bakery.Editor
     public static class HolypastryServices
     {
 
+        [MenuItem("Bakery/Install/Services/Music")]
+        public static void InstallMusicManager()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/MusicServices.git" });
+        }
+
         [MenuItem("Bakery/Install/Services/Dialogs")]
         public static void InstallDialogManager()
         {
