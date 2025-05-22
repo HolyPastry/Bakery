@@ -20,6 +20,11 @@ namespace Holypastry.Bakery
         public float CurrentTime => currentTime;
 
         /// <summary>
+        /// Gets the initial time of the timer.
+        /// </summary>
+        public float InitialTime => initialTime;
+
+        /// <summary>
         /// Gets the progress of the timer as a value between 0 and 1.
         /// </summary>
         public float Progress => currentTime / initialTime;
