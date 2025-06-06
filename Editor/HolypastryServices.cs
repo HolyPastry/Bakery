@@ -4,6 +4,13 @@ namespace Holypastry.Bakery.Editor
 {
     public static class HolypastryServices
     {
+
+        [MenuItem("Bakery/Install/Services/Quests")]
+        public static void InstallQuestManager()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/QuestServices.git" });
+        }
+
         [MenuItem("Bakery/Install/Services/Cutscenes")]
         public static void InstallCutsceneManager()
         {
