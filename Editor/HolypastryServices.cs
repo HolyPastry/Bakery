@@ -76,7 +76,7 @@ namespace Holypastry.Bakery.Editor
         [MenuItem("Bakery/Install/Services/TTS")]
         public static void InstallTTS()
         {
-            Packages.Install(new[] { "https://github.com/HolyPastry/TextToSpeech.git" });
+            Packages.Install(new[] { "https://github.com/HolyPastry/TextToSpeechPublic.git" });
         }
 
         [MenuItem("Bakery/Install/Services/NPCs")]
