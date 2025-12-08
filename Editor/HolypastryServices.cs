@@ -5,14 +5,14 @@ namespace Holypastry.Bakery.Editor
     public static class HolypastryServices
     {
 
-    [MenuItem("Bakery/Install/Version 2/Flow")]
-        public static void InstallFlowManager()
+        [MenuItem("Bakery/Install/Version 2/Flow")]
+        public static void InstallFlowManagerVersion2()
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/FlowServices.git#v2" });
         }
 
-         [MenuItem("Bakery/Install/Version 2/Saves")]
-        public static void InstallSaveManager()
+        [MenuItem("Bakery/Install/Version 2/Saves")]
+        public static void InstallSaveManagerVersion2()
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/SaveServices.git#v2" });
         }
