@@ -5,6 +5,17 @@ namespace Holypastry.Bakery.Editor
     public static class HolypastryServices
     {
 
+        [MenuItem("Bakery/Install/Version 2/Input")]
+        public static void InstallInputManagerVersion2()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/InputServices.git#v2" });
+        }
+        [MenuItem("Bakery/Install/Version 2/Camera")]
+        public static void InstallCameraManagerVersion2()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/CameraServices.git#v2" });
+        }
+
         [MenuItem("Bakery/Install/Version 2/Flow")]
         public static void InstallFlowManagerVersion2()
         {
