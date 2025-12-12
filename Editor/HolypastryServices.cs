@@ -4,7 +4,12 @@ namespace Holypastry.Bakery.Editor
 {
     public static class HolypastryServices
     {
-
+        [MenuItem("Bakery/Install/Version 2/Quests")]
+        public static void InstallQuestManagerVersion2()
+        {
+            // HolypastryFeatures.InstallInk();
+            Packages.Install(new[] { "https://github.com/HolyPastry/QuestServices.git#v2" });
+        }
         [MenuItem("Bakery/Install/Version 2/Dialogs")]
         public static void InstallDialogManagerVersion2()
         {
