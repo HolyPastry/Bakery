@@ -92,12 +92,6 @@ namespace Bakery.Core.Editor
             Packages.Install(new[] { "https://github.com/HolyPastry/FlowServices.git" });
         }
 
-        [MenuItem("Bakery/Install/Services/Input")]
-        public static void InstallInputManager()
-        {
-            Packages.Install(new[] { "https://github.com/HolyPastry/InputServices.git" });
-        }
-
         [MenuItem("Bakery/Install/Services/Saves")]
         public static void InstallSaveManager()
         {
