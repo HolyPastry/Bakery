@@ -1,5 +1,5 @@
 {
-    "name": "bakery.core",
+    "name": "com.holypastry.bakery.core",
     "version": "0.0.6",
     "displayName": "Bakery Core",
     "description": "A bunch of base classes and utilities for building a game in Unity3D",
