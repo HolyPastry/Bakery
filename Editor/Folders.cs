@@ -3,7 +3,7 @@ using System.IO;
 using UnityEngine;
 
 
-namespace Holypastry.Bakery.Editor
+namespace Bakery.Core.Editor
 {
 
     public static class Folders

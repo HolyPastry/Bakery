@@ -1,6 +1,6 @@
 using UnityEditor;
 
-namespace Holypastry.Bakery.Editor
+namespace Bakery.Core.Editor
 {
     public static class HolypastryServices
     {
@@ -8,8 +8,12 @@ namespace Holypastry.Bakery.Editor
         [MenuItem("Bakery/Install/Version 2/Cutscenes")]
         public static void InstallCutsceneManagerVersion2()
         {
-            // HolypastryFeatures.InstallInk();
             Packages.Install(new[] { "https://github.com/HolyPastry/CutsceneServices.git#v2" });
+        }
+        [MenuItem("Bakery/Install/Version 2/User")]
+        public static void InstallUserService()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/UserService.git" });
         }
 
         [MenuItem("Bakery/Install/Version 2/Quests")]
@@ -26,11 +30,6 @@ namespace Holypastry.Bakery.Editor
 
         }
 
-        [MenuItem("Bakery/Install/Version 2/Input")]
-        public static void InstallInputManagerVersion2()
-        {
-            Packages.Install(new[] { "https://github.com/HolyPastry/InputServices.git#v2" });
-        }
         [MenuItem("Bakery/Install/Version 2/Camera")]
         public static void InstallCameraManagerVersion2()
         {

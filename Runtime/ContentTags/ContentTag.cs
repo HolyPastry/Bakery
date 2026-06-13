@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-namespace Holypastry.Bakery
+namespace Bakery.Core
 {
     public class ContentTag : ScriptableObject
     {

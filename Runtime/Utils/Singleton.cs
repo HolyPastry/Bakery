@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 
-namespace Holypastry.Bakery
+namespace Bakery.Core
 {
     public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {

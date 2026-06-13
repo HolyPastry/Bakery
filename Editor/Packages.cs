@@ -5,7 +5,7 @@ using UnityEditor.PackageManager.Requests;
 using System.Collections.Generic;
 
 
-namespace Holypastry.Bakery.Editor
+namespace Bakery.Core.Editor
 {
     public static class Packages
     {

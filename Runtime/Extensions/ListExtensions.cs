@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 
 
-namespace Holypastry.Bakery
+namespace Bakery.Core
 {
     public static class Extensions
     {

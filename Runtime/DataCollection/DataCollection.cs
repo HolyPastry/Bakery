@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Holypastry.Bakery
+namespace Bakery.Core
 {
     public class DataCollection<T> where T : ScriptableObject
     {

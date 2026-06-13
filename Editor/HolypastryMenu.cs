@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Holypastry.Bakery.Editor
+namespace Bakery.Core.Editor
 {
     public static class HolypastryMenu
     {

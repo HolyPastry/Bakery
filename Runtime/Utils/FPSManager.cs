@@ -1,10 +1,7 @@
-using System;
-using System.Collections;
-using Holypastry;
 using UnityEngine;
 
 
-namespace Holypastry.Bakery
+namespace Bakery.Core
 {
     public class FPSManager
     {

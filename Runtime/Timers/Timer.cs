@@ -1,6 +1,6 @@
 using System;
 
-namespace Holypastry.Bakery
+namespace Bakery.Core
 {
     /// <summary>
     /// Represents a timer that counts down from an initial time and triggers events when it starts, ends, or is paused/resumed.

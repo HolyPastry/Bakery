@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Holypastry.Bakery
+namespace Bakery.Core
 {
     public static class Vector3Extensions
     {

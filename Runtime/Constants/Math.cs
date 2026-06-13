@@ -1,4 +1,4 @@
-namespace Holypastry.Bakery
+namespace Bakery.Core
 {
     public static class M
     {
