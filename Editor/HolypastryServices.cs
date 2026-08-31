@@ -48,7 +48,11 @@ namespace Bakery.Core.Editor
             Packages.Install(new[] { "https://github.com/HolyPastry/SaveServices.git#v2" });
         }
 
-
+        [MenuItem("Bakery/Install/Services/Inventory")]
+        public static void InstallInventoryServices()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/BakeryInventory.git" });
+        }
         [MenuItem("Bakery/Install/Services/Quests")]
         public static void InstallQuestManager()
         {
