@@ -4,6 +4,11 @@ namespace Bakery.Core.Editor
 {
     public static class HolypastryServices
     {
+        [MenuItem("Bakery/Install/Version 2/Translate")]
+        public static void InstallTranslate() 
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/BakeryTranslate.git" });
+        }
 
         [MenuItem("Bakery/Install/Version 2/Cutscenes")]
         public static void InstallCutsceneManagerVersion2()
