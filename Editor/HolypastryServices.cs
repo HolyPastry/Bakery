@@ -4,8 +4,14 @@ namespace Bakery.Core.Editor
 {
     public static class HolypastryServices
     {
+        [MenuItem("Bakery/Install/Services/TimeOfDay")]
+        public static void InstallTimeOfDay()
+        {
+            Packages.Install(new[] { "https://github.com/HolyPastry/TimeOfDay.git" });
+        }
+
         [MenuItem("Bakery/Install/Version 2/Translate")]
-        public static void InstallTranslate() 
+        public static void InstallTranslate()
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/BakeryTranslate.git" });
         }
@@ -15,6 +21,7 @@ namespace Bakery.Core.Editor
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/CutsceneServices.git#v2" });
         }
+
         [MenuItem("Bakery/Install/Version 2/User")]
         public static void InstallUserService()
         {
@@ -27,12 +34,12 @@ namespace Bakery.Core.Editor
             // HolypastryFeatures.InstallInk();
             Packages.Install(new[] { "https://github.com/HolyPastry/QuestServices.git#v2" });
         }
+
         [MenuItem("Bakery/Install/Version 2/Dialogs")]
         public static void InstallDialogManagerVersion2()
         {
             // HolypastryFeatures.InstallInk();
             Packages.Install(new[] { "https://github.com/HolyPastry/DialogServices.git#v2" });
-
         }
 
         [MenuItem("Bakery/Install/Version 2/Camera")]
@@ -58,6 +65,7 @@ namespace Bakery.Core.Editor
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/BakeryInventory.git" });
         }
+
         [MenuItem("Bakery/Install/Services/Quests")]
         public static void InstallQuestManager()
         {
@@ -81,19 +89,19 @@ namespace Bakery.Core.Editor
         {
             // HolypastryFeatures.InstallInk();
             Packages.Install(new[] { "https://github.com/HolyPastry/DialogServices.git" });
-
         }
+
         [MenuItem("Bakery/Install/Services/Camera")]
         public static void InstallCameraManager()
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/CameraServices.git" });
         }
+
         [MenuItem("Bakery/Install/Services/Time")]
         public static void InstallTimeManager()
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/TimeServices.git" });
         }
-
 
         [MenuItem("Bakery/Install/Services/Flow")]
         public static void InstallFlowManager()
@@ -106,7 +114,6 @@ namespace Bakery.Core.Editor
         {
             Packages.Install(new[] { "https://github.com/HolyPastry/SaveServices.git" });
         }
-
 
         [MenuItem("Bakery/Install/Services/Cheat")]
         public static void InstallCheatManager()
@@ -131,6 +138,5 @@ namespace Bakery.Core.Editor
         {
             Assets.ImportFromLocal("NPC");
         }
-
     }
 }
